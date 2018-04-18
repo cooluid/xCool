@@ -3,10 +3,12 @@ import store from '@/store'
 import App from '@/App'
 import MpvueRouterPatch from 'mpvue-router-patch'
 import wx from '@/utils/wx'
+import wxp from 'minapp-api-promise'
 
 Vue.config.productionTip = false
 Vue.use(MpvueRouterPatch)
 Vue.prototype.$wx = wx
+Vue.prototype.$wxp = wxp
 
 const app = new Vue({
   store,
@@ -23,8 +25,8 @@ export default {
     window: {
       backgroundTextStyle: 'light',
       backgroundColor: '#18b210',
-      backgroundColorTop: '#37d21f',
-      navigationBarBackgroundColor: '#65d221',
+      backgroundColorTop: '#4bff20',
+      navigationBarBackgroundColor: '#279c27',
       navigationBarTitleText: 'xcool',
       navigationBarTextStyle: 'white'
     }
